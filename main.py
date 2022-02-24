@@ -7,6 +7,8 @@ class Materie:
         self.nota = float(input("Nota " + self.nume + ": "))
 
     def getNota(self):
+        if self.nume == "Bacalaureat":
+            return self.nota
         return 0.5 * self.nota
 
 
